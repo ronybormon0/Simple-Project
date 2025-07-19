@@ -1,0 +1,246 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #202020;
+  color: #ffffff;
+  font-size: 2vw;
+  line-height: 1.4;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 1.3vw;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/* Heading Styles */
+.h2 {
+  font-size: 2vw;
+  color: #ffffff;
+}
+h3 {
+  font-size: 2.2vw;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.8vw 2vw;
+  background-color: #ffffff;
+  color: #202020;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn:hover {
+  background-color: #f33920;
+  color: #ffffff;
+}
+
+/* Area Container */
+.area {
+  width: 100%;
+  height: auto;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  /* background-color: #eeeded; */
+}
+
+/* Logo Styles */
+.logo {
+  width: 20%;
+  padding-right: 5vw;
+  padding-top: 1vw;
+}
+.logo a {
+  /* Add styles if needed */
+}
+.logo a img {
+  width: 25%;
+  height: auto;
+}
+
+/* Menu Styles */
+.menu {
+  width: 70%;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2vw;
+}
+.menu ul li {
+  display: inline-block;
+  font-size: 1.5vw;
+}
+.menu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5vw 1vw;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.5vw;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.menu ul li a:hover {
+  color: #ffffff;
+  background-color: #f33920;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Banner Styles */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+  /* background-color: #282828; */
+  gap: 2vw;
+}
+
+/* Single Service Card */
+.single-services {
+  width: 30%;
+  background-color: #383838;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3vw;
+}
+.single-services img {
+  width: 100%;
+  height: 11vw;
+  border-radius: 0.5vw;
+}
+
+/* Service Cards Container */
+.service {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Service Button */
+.single-services .btn {
+  width: 100%;
+  padding: 0.5vw;
+  background-color: #ffffff;
+  color: #202020;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.single-services .btn:hover {
+  background-color: #f33920;
+  color: #ffffff;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  align-content: center;
+  /* justify-content: center; */
+  flex-direction: row;
+  padding: 2vw;
+  gap: 2vw;
+  align-items: flex-start;
+}
+.about-left {
+  width: 70%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.about-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 2vw;
+  background-color: #383838;
+  border-radius: 1vw;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* About Right List */
+.about-right ul {
+  /* list-style: url("../img/right-arrow.png"); */
+  list-style: square;
+  padding-left: 1.5vw;
+}
+.about-right ul li {
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+  color: #ffffff;
+}
+.about-right ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.about-right ul li:hover {
+  color: #f33920;
+}
+.about-right ul li a:hover {
+  color: #f33920;
+  /* text-decoration: underline; */
+}
+
+/* Footer Styles */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+  padding: 1vw 4vw;
+  color: #ffffff;
+  text-align: center;
+}
+.footer p {
+  font-size: 1vw;
+}
+.footer-social a {
+  font-size: 1vw;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-social a:hover {
+  color: #f33920;
+}
