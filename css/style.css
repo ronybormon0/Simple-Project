@@ -32,6 +32,11 @@ h3 {
   font-weight: 400;
   color: #ffffff;
 }
+h3 {
+  font-size: 2vw;
+  font-weight: 400;
+  color: #ffffff;
+}
 
 /* Button Styles */
 .btn {
@@ -140,6 +145,7 @@ h3 {
   width: 100%;
   height: 11vw;
   border-radius: 0.5vw;
+  object-fit: cover;
 }
 
 /* Service Cards Container */
@@ -243,4 +249,200 @@ h3 {
 }
 .footer-social a:hover {
   color: #f33920;
+}
+
+/* About Page Styles */
+.page-banner {
+  width: 100%;
+  height: 28vw;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.page-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.363);
+}
+.page-banner h2 {
+  font-size: 3vw;
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(160, 68, 25, 0.5);
+}
+
+/* Services Page Styles */
+.service-page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  gap: 1.5vw;
+  justify-content: center;
+}
+.single-services-page {
+  width: 20%;
+  gap: 1vw;
+  padding: 1.3vw;
+}
+.single-services-page img {
+  width: 100%;
+  height: 8vw;
+}
+.single-services-page h3 {
+  font-size: 1.8vw;
+  line-height: 1.1em;
+}
+.single-services-page p {
+  font-size: 1vw;
+  line-height: 1.5em;
+}
+.single-services-page .btn {
+  font-size: 1vw;
+}
+
+/* Gallery Page Styles */
+.gallerys {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw;
+  gap: 1.5vw;
+}
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.single-gallery {
+  width: 25%;
+}
+.single-gallery iframe {
+  width: 100%;
+  height: 15vw;
+  border-radius: 0.5vw;
+  object-fit: cover;
+}
+
+/* Contact Section Styles */
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2vw;
+}
+.contact-left {
+  width: 60%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.contact-right {
+  width: 30%;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+/* Map Styles */
+.map {
+  width: 100%;
+  height: 20vw;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Contact Form Styles */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+.contact input[type="text"] {
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid #ffffff;
+  border-radius: 0.5vw;
+}
+.contact input[type="email"] {
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid #ffffff;
+  border-radius: 0.5vw;
+}
+.contact textarea {
+  width: 100%;
+  height: 10vw;
+  padding: 1vw;
+  border: 1px solid #ffffff;
+  border-radius: 0.5vw;
+}
+.contact button {
+  width: 100%;
+}
+.contact label {
+  font-size: 5vw;
+  color: #ffffff;
+  margin-bottom: 0.5vw;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  font-size: 1vw;
+  background-color: #ffffff;
+}
+/* 
+.contact input[type="submit"] {
+  background-color: #f33920;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+*/
+
+/* Contact Right List Styles */
+.contact-right ul {
+  list-style: none;
+}
+.contact-right ul {
+  font-size: 1.2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.contact-right ul span {
+  font-weight: bold;
+}
+.contact-right ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.contact-right ul a:hover {
+  color: #f33920;
+}
+.contact-right img {
+  max-width: 100%;
+  height: 20vw;
+  border-radius: 0.5vw;
+  object-fit: cover;
+  object-position: right;
 }
